@@ -377,7 +377,7 @@ a {
     clear: both; }
 
 .welcome {
-  background: white url("../img/welcome_background.png") no-repeat center center;
+  background: url("../img/welcome_background.png") no-repeat center center;
   -webkit-background-size: cover;
           background-size: cover; }
 
@@ -508,7 +508,7 @@ a {
     color: #b8a269; }
 
 .advantages {
-  background: white url("../img/advantages_background.png") no-repeat center center;
+  background: url("../img/advantages_background.png") no-repeat center center;
   -webkit-background-size: cover;
           background-size: cover; }
   .advantages .content__info {

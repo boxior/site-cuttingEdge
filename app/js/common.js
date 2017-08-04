@@ -56,8 +56,15 @@ $(document).ready(function(){
         nextArrow: '<i class="fa fa-long-arrow-right"></i>',
         
     });    
+
+   
 });
-       
+
+    function animationOut(i){}
+    function animationIn(i){}
+      //well, you need modify the cubeTransition.js file
+      //delete the two functions if you dont need this kind of animation.
+    
 
 
             

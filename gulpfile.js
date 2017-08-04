@@ -31,9 +31,15 @@ gulp.task('html', function() {
   // Not use because libs css @import
 
 // gulp.task('css-libs', ['sass'], function() {
-//  return gulp.src('app/css/libs/**/*.css')
+//  return gulp.src([
+//    'app/libs/slick/slick.css',
+//    'app/libs/slick/slick-theme.css',
+//    'app/libs/cubeTransition/style.css',
+//    'app/libs/fontawesome/css/font-awesome.min.css'
+//   ])
 //   .pipe(cssnano())
-//   .pipe(rename({suffix: '.min'}))
+//   .pipe(concat('libs.min.css'))
+//   // .pipe(rename({suffix: '.min'}))
 //   .pipe(gulp.dest('app/css'));
 // });
 
@@ -52,6 +58,11 @@ gulp.task('js', ['common-js'], function() {
     'app/libs/tether/js/tether.min.js',
     'app/libs/bootstrap/js/bootstrap.min.js',
     'app/libs/slick/slick.min.js',
+
+    'app/libs/cubeTransition/wheel-indicator.js',
+    'app/libs/cubeTransition/jquery.touchSwipe.js',
+    'app/libs/cubeTransition/cubeTransition.js',
+
 		'app/js/common.min.js' // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
@@ -90,9 +101,10 @@ gulp.task('img', function() {
 });
 
 gulp.task('watch', ['html', 'sass', 'js', 'browser-sync'], function() {
-	gulp.watch('app/sass/**/*.sass', ['sass']);
+  gulp.watch('app/sass/**/*.sass', ['sass']);
+  // gulp.watch('app/libs/**/*.css', ['css-libs']);
 	gulp.watch('app/templates/**/*.html', ['html']);
-	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
+	gulp.watch(['app/libs/**/*.js', 'app/js/common.js'], ['js']);
 	gulp.watch('app/*.html', browserSync.reload);
 });
 
@@ -108,6 +120,9 @@ gulp.task('build', ['cleanDocs', 'img', 'sass'], function() {
 
   var buildJs = gulp.src('app/js/scripts.min.js')
   .pipe(gulp.dest('docs/js'));
+
+  var buildLibs = gulp.src('app/libs/**/*')
+  .pipe(gulp.dest('docs/libs'));
 });
 
 gulp.task('default', ['watch']);
