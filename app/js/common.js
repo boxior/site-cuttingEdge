@@ -10,48 +10,52 @@ $(document).ready(function(){
         $('.content__window .fa').css('color','#6a0001');
     });
 
-    $('.advantages__green-zone').animate({'opacity':'1','top':'0'});
-    $('.advantages__parking').animate({'opacity':'1','top':'0'});
-    $('.advantages__infrastructure').animate({'opacity':'1','top':'0'});
-    $('.advantages__four').animate({'opacity':'1','top':'0'});
-
-
-    $(document).on("mouseover", ".advantages__green-zone", function(){
-        $('.advantages__green-zone + .advantages__shadow').animate({'opacity':'1','top':'2rem','right':'2rem'});
-    });
-    $(document).on("mouseleave", ".advantages__green-zone", function(){
-        $('.advantages__green-zone + .advantages__shadow').animate({'opacity':'0','top':'0','right':'0'});
+    $('.content__info2--block div:first-child').animate({'opacity':'1','top':'0'}, 1000 , function(){
+        $('.content__info2--block div:first-child').css({'top':'0','opacity':'1'});
     });
 
-    $(document).on("mouseover", ".advantages__parking", function(){
-        $('.advantages__parking + .advantages__shadow').animate({'opacity':'1','top':'2rem','right':'2rem'});
+    // $('.content__info2--block div:first-child').hover(function(){
+    //     $('.content__info2--block div:last-child').animate({'opacity':'1','top':'2rem','right':'2rem'});
+    // }, function(){
+    //     $('.content__info2--block div:last-child').animate({'opacity':'0','top':'0','right':'0'});
+    // });
+
+    $(document).on("mouseover", ".content__green-zone", function(){
+        $('.content__green-zone + .content__shadow').animate({'opacity':'1','top':'2rem','right':'2rem'});
     });
-    $(document).on("mouseleave", ".advantages__parking", function(){
-        $('.advantages__parking + .advantages__shadow').animate({'opacity':'0','top':'0','right':'0'});
+    $(document).on("mouseleave", ".content__green-zone", function(){
+        $('.content__green-zone + .content__shadow').animate({'opacity':'0','top':'0','right':'0'});
     });
 
-    $(document).on("mouseover", ".advantages__infrastructure", function(){
-        $('.advantages__infrastructure + .advantages__shadow').animate({'opacity':'1','top':'2rem','right':'2rem'});
+    $(document).on("mouseover", ".content__parking", function(){
+        $('.content__parking + .content__shadow').animate({'opacity':'1','top':'2rem','right':'2rem'});
     });
-    $(document).on("mouseleave", ".advantages__infrastructure", function(){
-        $('.advantages__infrastructure + .advantages__shadow').animate({'opacity':'0','top':'0','right':'0'});
+    $(document).on("mouseleave", ".content__parking", function(){
+        $('.content__parking + .content__shadow').animate({'opacity':'0','top':'0','right':'0'});
     });
 
-    $(document).on("mouseover", ".advantages__four", function(){
-        $('.advantages__four + .advantages__shadow').animate({'opacity':'1','top':'2rem','right':'2rem'});
+    $(document).on("mouseover", ".content__infrastructure", function(){
+        $('.content__infrastructure + .content__shadow').animate({'opacity':'1','top':'2rem','right':'2rem'});
     });
-    $(document).on("mouseleave", ".advantages__four", function(){
-        $('.advantages__four + .advantages__shadow').animate({'opacity':'0','top':'0','right':'0'});
+    $(document).on("mouseleave", ".content__infrastructure", function(){
+        $('.content__infrastructure + .content__shadow').animate({'opacity':'0','top':'0','right':'0'});
+    });
+
+    $(document).on("mouseover", ".content__four", function(){
+        $('.content__four + .content__shadow').animate({'opacity':'1','top':'2rem','right':'2rem'});
+    });
+    $(document).on("mouseleave", ".content__four", function(){
+        $('.content__four + .content__shadow').animate({'opacity':'0','top':'0','right':'0'});
     });
 
             
-    $('.advantages .content__info').slick({
+    $('.advantages .content__info2').slick({
         infinity: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
-        appendArrows: $('.advantages__arrows'),
+        appendArrows: $('.content__arrows'),
         prevArrow: '<i class="fa fa-long-arrow-left"></i>',
         nextArrow: '<i class="fa fa-long-arrow-right"></i>',
         
