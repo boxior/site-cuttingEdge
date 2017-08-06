@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Block*/
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -554,7 +555,8 @@ body {
   background: #b8a269; }
 
 .wrapper {
-  color: #ffffff; }
+  color: #ffffff;
+  min-width: 320px; }
 
 .sc {
   padding: 3.5rem 11.7% 3.5rem 11.7%;
@@ -578,16 +580,41 @@ a {
 .welcome {
   background: url("../img/welcome_background.png") no-repeat center center;
   -webkit-background-size: cover;
-          background-size: cover; }
+          background-size: cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .content {
   padding: 3.5rem 11.7% 3.5rem 11.7%; }
+  .content__logo {
+    display: inline-block; }
+    .content__logo p {
+      margin: 0;
+      font-size: 5rem; }
+      .content__logo p:after {
+        font-size: 3rem;
+        content: 'житловий квартал';
+        display: block;
+        text-align: right; }
   .content__phone {
     display: block;
     font-size: 3rem;
     text-align: right;
     margin-bottom: 3.5rem; }
+    .content__phone:hover {
+      color: #b8a269; }
   .content__menu {
+    width: 100%;
     display: inline-block;
     float: left;
     font-size: 2.4rem;
@@ -597,10 +624,12 @@ a {
     .content__menu .fa {
       margin-right: .5rem; }
   .content__language {
+    width: 100%;
     margin: 0 0 7.7rem 0;
     padding: 0;
     height: 2.4rem;
-    text-align: right; }
+    text-align: right;
+    display: inline-block; }
     .content__language li {
       display: inline-block;
       margin-left: 2.5rem; }
@@ -683,7 +712,7 @@ a {
     margin: 7rem 0 0 0; }
     .content__nav--page-number {
       display: block;
-      width: 3rem;
+      width: 2rem;
       text-align: right;
       margin-bottom: 4.5rem;
       border: .2rem solid transparent; }
@@ -702,105 +731,134 @@ a {
 .advantages {
   background: url("../img/advantages_background.png") no-repeat center center;
   -webkit-background-size: cover;
-          background-size: cover; }
-  .advantages .content__info2 {
-    width: 75%;
-    display: inline-block;
-    margin: 7rem 0 0 0;
-    font-size: 1.8rem;
-    color: #a28f5c; }
-    .advantages .content__info2--block {
-      position: relative;
-      margin-left: 5rem;
-      height: 34rem; }
-  .advantages .content__green-zone {
-    position: absolute;
-    width: 100%;
-    top: 7rem;
-    z-index: 1;
-    text-align: -webkit-center;
-    opacity: 0;
-    padding: 8.5rem 0 8.5rem 0;
-    background: rgba(255, 255, 255, 0.9);
-    -webkit-transition: all linear .5s;
-    -o-transition: all linear .5s;
-    transition: all linear .5s;
-    color: #a28f5c; }
-    .advantages .content__green-zone:hover {
-      background: #6a0001;
-      cursor: pointer; }
-    .advantages .content__green-zone img {
-      height: 10rem; }
-  .advantages .content__parking {
-    position: absolute;
-    width: 100%;
-    top: 7rem;
-    z-index: 1;
-    text-align: -webkit-center;
-    opacity: 0;
-    padding: 8.5rem 0 8.5rem 0;
-    background: rgba(255, 255, 255, 0.9);
-    -webkit-transition: all linear .5s;
-    -o-transition: all linear .5s;
-    transition: all linear .5s; }
-    .advantages .content__parking:hover {
-      background: #6a0001;
-      cursor: pointer; }
-    .advantages .content__parking img {
-      height: 10rem; }
-  .advantages .content__infrastructure {
-    position: absolute;
-    width: 100%;
-    top: 7rem;
-    z-index: 1;
-    opacity: 0;
-    text-align: -webkit-center;
-    padding: 8.5rem 0 8.5rem 0;
-    background: rgba(255, 255, 255, 0.9);
-    -webkit-transition: all linear .5s;
-    -o-transition: all linear .5s;
-    transition: all linear .5s; }
-    .advantages .content__infrastructure:hover {
-      background: #6a0001;
-      cursor: pointer; }
-    .advantages .content__infrastructure img {
-      height: 10rem; }
-  .advantages .content__four {
-    position: absolute;
-    width: 100%;
-    top: 7rem;
-    z-index: 1;
-    opacity: 0;
-    text-align: -webkit-center;
-    padding: 8.5rem 0 8.5rem 0;
-    background: rgba(255, 255, 255, 0.9);
-    -webkit-transition: all linear .5s;
-    -o-transition: all linear .5s;
-    transition: all linear .5s; }
-    .advantages .content__four:hover {
-      background: #6a0001;
-      cursor: pointer; }
-    .advantages .content__four img {
-      height: 10rem; }
-  .advantages .content__shadow {
-    position: absolute;
-    z-index: 0;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    background: url("../img/window_shadow.png") no-repeat bottom center;
-    -webkit-background-size: cover;
-            background-size: cover; }
-  .advantages .content__arrows .fa {
-    font-size: 5rem; }
-    .advantages .content__arrows .fa:hover {
-      cursor: pointer;
+          background-size: cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .advantages .content {
+    width: 76.6%;
+    padding: 12rem 0 12rem 0; }
+    .advantages .content__info2 {
+      width: 75%;
+      display: inline-block;
+      margin: 7rem 0 0 0;
+      font-size: 1.8rem;
       color: #a28f5c; }
-  .advantages .content__arrows .fa:first-child {
-    margin-right: 3rem; }
+      .advantages .content__info2--block {
+        position: relative;
+        margin-left: 5rem;
+        width: 30%;
+        height: 34rem; }
+    .advantages .content__green-zone {
+      position: absolute;
+      width: 100%;
+      top: 7rem;
+      z-index: 1;
+      text-align: -webkit-center;
+      opacity: 0;
+      padding: 8.5rem 0 8.5rem 0;
+      background: rgba(255, 255, 255, 0.9);
+      -webkit-transition: all linear .5s;
+      -o-transition: all linear .5s;
+      transition: all linear .5s;
+      color: #a28f5c; }
+      .advantages .content__green-zone:hover {
+        background: #6a0001;
+        cursor: pointer; }
+      .advantages .content__green-zone img {
+        height: 10rem; }
+    .advantages .content__parking {
+      position: absolute;
+      width: 100%;
+      top: 7rem;
+      z-index: 1;
+      text-align: -webkit-center;
+      opacity: 0;
+      padding: 8.5rem 0 8.5rem 0;
+      background: rgba(255, 255, 255, 0.9);
+      -webkit-transition: all linear .5s;
+      -o-transition: all linear .5s;
+      transition: all linear .5s; }
+      .advantages .content__parking:hover {
+        background: #6a0001;
+        cursor: pointer; }
+      .advantages .content__parking img {
+        height: 10rem; }
+    .advantages .content__infrastructure {
+      position: absolute;
+      width: 100%;
+      top: 7rem;
+      z-index: 1;
+      opacity: 0;
+      text-align: -webkit-center;
+      padding: 8.5rem 0 8.5rem 0;
+      background: rgba(255, 255, 255, 0.9);
+      -webkit-transition: all linear .5s;
+      -o-transition: all linear .5s;
+      transition: all linear .5s; }
+      .advantages .content__infrastructure:hover {
+        background: #6a0001;
+        cursor: pointer; }
+      .advantages .content__infrastructure img {
+        height: 10rem; }
+    .advantages .content__four {
+      position: absolute;
+      width: 100%;
+      top: 7rem;
+      z-index: 1;
+      opacity: 0;
+      text-align: -webkit-center;
+      padding: 8.5rem 0 8.5rem 0;
+      background: rgba(255, 255, 255, 0.9);
+      -webkit-transition: all linear .5s;
+      -o-transition: all linear .5s;
+      transition: all linear .5s; }
+      .advantages .content__four:hover {
+        background: #6a0001;
+        cursor: pointer; }
+      .advantages .content__four img {
+        height: 10rem; }
+    .advantages .content__shadow {
+      position: absolute;
+      z-index: 0;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      background: url("../img/window_shadow.png") no-repeat bottom center;
+      -webkit-background-size: cover;
+              background-size: cover; }
+    .advantages .content__arrows .fa {
+      font-size: 5rem; }
+      .advantages .content__arrows .fa:hover {
+        cursor: pointer;
+        color: #a28f5c; }
+    .advantages .content__arrows .fa:first-child {
+      margin-right: 3rem; }
 
 .menu {
+  padding: 0 11.7% 0 11.7%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100vh;
   background: #ef1f5a; }
   .menu .content {
@@ -883,7 +941,94 @@ a {
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
-  /**/ }
+  .sc {
+    padding: 0; }
+  .advantages .content {
+    width: 90%; }
+    .advantages .content__info2 {
+      width: 100%; }
+      .advantages .content__info2--block {
+        font-size: 5rem;
+        height: 54rem; }
+        .advantages .content__info2--block img {
+          height: 20rem; }
+  .content {
+    padding: 5%; }
+    .content__logo {
+      display: block;
+      margin-bottom: 3rem; }
+      .content__logo p {
+        margin: 0;
+        font-size: 12rem;
+        text-align: center; }
+        .content__logo p:after {
+          font-size: 8rem;
+          content: 'житловий квартал';
+          display: block;
+          text-align: center; }
+    .content__phone {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-size: 8rem;
+      margin-bottom: 10rem; }
+    .content__menu {
+      display: block;
+      width: 50%;
+      text-align: left;
+      font-size: 8rem;
+      float: left; }
+    .content__language {
+      display: inline-block;
+      width: 49%;
+      text-align: right; }
+      .content__language li a {
+        font-size: 5rem; }
+    .content__about {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+      width: 100%;
+      margin-top: 5rem; }
+    .content__page-number {
+      line-height: 8rem;
+      font-size: 5rem; }
+    .content__explain {
+      font-size: 8rem; }
+    .content__more {
+      font-size: 5rem;
+      line-height: 8rem; }
+    .content__info {
+      width: 60%;
+      padding-right: 18%; }
+      .content__info h3 {
+        font-size: 5rem; }
+      .content__info p {
+        font-size: 3rem; }
+    .content__nav {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+      width: 100%;
+      font-size: 5rem; }
+    .content__window .fa {
+      font-size: 8rem;
+      padding: 7rem; }
+    .content__window-shadow {
+      font-size: 8rem;
+      padding: 7rem; }
+    .content__arrows {
+      display: none; }
+  .menu .content {
+    padding: 5%; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -891,7 +1036,39 @@ a {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  /**/ }
+  html {
+    font-size: 1vw; }
+  .advantages .content {
+    width: 90%; }
+    .advantages .content__info2 {
+      width: 100%; }
+      .advantages .content__info2--block {
+        font-size: 10rem;
+        height: 73.5rem; }
+        .advantages .content__info2--block img {
+          height: 25rem; }
+  .content__language {
+    height: 8rem;
+    text-align: right;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .content__language li {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .content__language li a {
+        font-size: 5rem; }
+        .content__language li a:hover {
+          color: #b8a269; }
+  .content__menu .fa {
+    margin-right: 3rem; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -911,7 +1088,7 @@ a {
   /**/ }
 
 /* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   html {
     font-size: 0.689vw; } }
 

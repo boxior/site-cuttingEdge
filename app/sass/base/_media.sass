@@ -4,7 +4,106 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+	.sc
+		padding: 0
+
+	.advantages
+		.content
+			width: 90%
+			&__info2
+				width: 100%
+				&--block 
+					font-size: 5rem
+					height: 54rem
+					img 
+						height: 20rem
+	.content
+		padding: 5%
+		&__logo
+			display: block
+			margin-bottom: 3rem
+			p
+				margin: 0
+				font-size: 12rem
+				text-align: center
+
+				&:after
+					font-size: 8rem
+					content: 'житловий квартал'
+					display: block 
+					text-align: center
+
+		&__phone 
+			display: block 
+			width: 100%
+			text-align: center
+			font-size: 8rem
+			margin-bottom: 10rem
+			
+
+		&__menu
+			display: block 
+			width: 50%
+			text-align: left
+			font-size: 8rem
+			float: left
+			
+
+		&__language
+			display: inline-block 
+			width: 49%
+			text-align: right
+			li
+				a 
+					font-size: 5rem
+			
+		
+		&__about 
+			display: flex 
+			justify-content: space-around
+			width: 100%
+			margin-top: 5rem
+			
+		&__page-number 
+			line-height: 8rem
+			font-size: 5rem
+		&__explain
+			font-size: 8rem
+		&__more
+			font-size: 5rem
+			line-height: 8rem
+
+		&__info 
+			width: 60%
+			padding-right: 18%
+			h3
+				font-size: 5rem
+
+			p 
+				font-size: 3rem
+		
+		&__nav 
+			display: flex
+			justify-content: space-around
+			width: 100%
+			font-size: 5rem
+
+		&__window
+			.fa
+				font-size: 8rem
+				padding: 7rem
+			&-shadow 
+				font-size: 8rem
+				padding: 7rem
+
+		&__arrows
+			display: none
+
+	.menu
+		.content
+			padding: 5%
+			
+			
 
 
 /* Medium Devices, Desktops */
@@ -14,7 +113,38 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+	html 
+		font-size: 1vw
+	.advantages
+		.content
+			width: 90%
+			&__info2
+				width: 100%
+				&--block 
+					font-size: 10rem
+					height: 73.5rem
+					img 
+						height: 25rem
+	
+	.content
+
+		&__language
+			height: 8rem
+			text-align: right
+			display: flex
+			justify-content: flex-end
+			
+			li 
+				display: flex
+				a 
+					font-size: 5rem
+					
+					&:hover
+						color: #b8a269
+						
+		&__menu 
+			.fa
+				margin-right: 3rem
 	
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -39,7 +169,7 @@
 
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
+@media only screen and (min-width : 769px)
 	html 
 		font-size: 0.689vw
 

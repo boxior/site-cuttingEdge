@@ -59,6 +59,22 @@ $(document).ready(function(){
         appendArrows: $('.content__arrows'),
         prevArrow: '<i class="fa fa-long-arrow-left"></i>',
         nextArrow: '<i class="fa fa-long-arrow-right"></i>',
+        responsive: [
+             {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
         
     });    
 
@@ -71,10 +87,14 @@ $(document).ready(function(){
     });
 
     $('.content__nav a:nth-child(2)').click(function(){
+        $('.page1').removeClass('visible');
         $('.page2').addClass('visible');
-        function animationOut(i){}
-    function animationIn(i){}
     });
+    $('.content__nav a:nth-child(1)').click(function(){
+        $('.page2').removeClass('visible');
+        $('.page1').addClass('visible');
+    });
+    
 
 });
     // $('.content__nav--page-number').click(function(){

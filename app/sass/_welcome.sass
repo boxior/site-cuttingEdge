@@ -1,17 +1,35 @@
-
 .welcome
     background: url('../img/welcome_background.png') no-repeat center center
     background-size: cover
+    display: flex 
+    align-items: center
+    justify-content: center
       
 .content
     padding: 3.5rem 11.7% 3.5rem 11.7%
+    // height: 90vh
+
+    &__logo
+        display: inline-block
+        p
+            margin: 0
+            font-size: 5rem
+
+            &:after
+                font-size: 3rem
+                content: 'житловий квартал'
+                display: block 
+                text-align: right
     &__phone
         display: block
         font-size: 3rem
         text-align: right
         margin-bottom: 3.5rem
+        &:hover
+            color: #b8a269
 
     &__menu
+        width: 100%
         display: inline-block
         float: left
         font-size: 2.4rem
@@ -23,10 +41,12 @@
             margin-right: .5rem
 
     &__language
+        width: 100%
         margin: 0 0 7.7rem 0
         padding: 0
         height: 2.4rem
         text-align: right
+        display: inline-block
         li 
             display: inline-block
             margin-left: 2.5rem
@@ -111,7 +131,7 @@
         margin: 7rem 0 0 0
         &--page-number
             display: block
-            width: 3rem
+            width: 2rem
             text-align: right
             margin-bottom: 4.5rem
             border: .2rem solid transparent
