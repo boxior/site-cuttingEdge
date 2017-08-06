@@ -4,13 +4,15 @@
 @import "base/libs"
 @import "base/vars"
 @import "base/extend"
+@import "js-effect/cubeTransition"
 
-
+body 
+    background: #b8a269
 .wrapper
     color: $color-default
 
 .sc
-    padding: 3.5rem 11.7% 12rem 11.7%
+    padding: 3.5rem 11.7% 3.5rem 11.7%
     zoom: 1
     &:before,&:after
         content: ''
@@ -21,7 +23,7 @@
 a 
     text-decoration: none
     color: $color-default
-    transition: 1s
+    transition: .5s
     &:hover
         cursor: pointer
         text-decoration: none
@@ -30,6 +32,7 @@ a
 @import "header"
 @import "welcome"
 @import "advantages"
+@import "menu"
 @import "footer"
 
 @import "base/media" // Всегда в конце

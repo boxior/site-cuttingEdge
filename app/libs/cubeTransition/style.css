@@ -1,4 +1,4 @@
-* {
+/* * {
 	margin: 0;
 	padding: 0;
 }
@@ -7,6 +7,9 @@ html,body {
 	overflow: hidden;
 	height: 100%;
 	background-color: #fefefe;
+	font-family: Helvetica, sans-serif;
+	font-size: 16px;
+	color: #fff;
 }
 
 #cubeTransition {
@@ -19,7 +22,7 @@ html,body {
 	transform-style: preserve-3d;
 }
 
-#cubeTransition>div {
+#cubeTransition div {
 	min-height: 100%;
 	width: 100%;
 	position: absolute;
@@ -260,4 +263,4 @@ html,body {
 	.github-ribbon {
 		display: none;
 	}
-}
+} */

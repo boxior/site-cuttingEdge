@@ -3,7 +3,7 @@
 $(document).ready(function(){
     $('.content__info').fadeIn(1000);
     $('.content__window').fadeIn(1000).animate({'top': '50%'});
-    $('.content__window-shadow').delay(1500).fadeIn().animate({'top':'57%','right':'-12%'});
+    $('.content__window-shadow').delay(2000).fadeIn().animate({'top':'57%','right':'-12%'});
     $('.content__window').hover(function(){
         $('.content__window .fa').css('color','#bfad7c');
     }, function(){
@@ -48,7 +48,8 @@ $(document).ready(function(){
         $('.content__four + .content__shadow').animate({'opacity':'0','top':'0','right':'0'});
     });
 
-            
+
+
     $('.advantages .content__info2').slick({
         infinity: true,
         slidesToShow: 3,
@@ -61,8 +62,24 @@ $(document).ready(function(){
         
     });    
 
-   
+    $('.content__menu').click(function(){
+        $('.menu').fadeIn(1000);
+    });
+
+    $('.menu .content__menu').click(function(){
+        $('.menu').fadeOut(1000);
+    });
+
+    $('.content__nav a:nth-child(2)').click(function(){
+        $('.page2').addClass('visible');
+        function animationOut(i){}
+    function animationIn(i){}
+    });
+
 });
+    // $('.content__nav--page-number').click(function(){
+
+    // });
 
     function animationOut(i){}
     function animationIn(i){}
