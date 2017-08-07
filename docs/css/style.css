@@ -593,6 +593,15 @@ a {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  .welcome__video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -9999; }
 
 .content {
   padding: 0 11.7% 0 11.7%;
@@ -857,7 +866,7 @@ a {
       margin-right: 3rem; }
 
 .menu {
-  padding: 0 11.7% 0 11.7%;
+  padding: 0 11.7% 7rem 11.7%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
