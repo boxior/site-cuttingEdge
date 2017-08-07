@@ -3,7 +3,10 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
+@media only screen and (max-width : 1200px) 
+	html 
+		font-size: 0.5vw
+
 	.sc
 		padding: 0
 
@@ -153,7 +156,9 @@
 		&__logo
 			order: 5
 			
-			
+// @media all and (orientation: landscape) and (max-width: 1200px)
+// 	html 
+// 		font-size: .3vw
 
 
 /* Medium Devices, Desktops */
@@ -162,6 +167,8 @@
 
 
 /* Small Devices, Tablets */
+
+
 @media only screen and (max-width : 768px)
 	html 
 		font-size: .8vw
@@ -208,6 +215,10 @@
 	.menu
 		&__content
 			font-size: 3.18rem
+
+@media all and (orientation: landscape) and (max-width: 768px)
+	html 
+		font-size: .35vw
 	
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -233,8 +244,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 769px)
-	html 
-		font-size: 0.689vw
+	/**/
 
 
 /* Medium Devices, Desktops */
@@ -243,6 +253,7 @@
 
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
+@media only screen and (min-width : 1201px)
+	html 
+		font-size: 0.689vw
 

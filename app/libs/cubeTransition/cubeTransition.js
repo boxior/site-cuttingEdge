@@ -105,5 +105,9 @@
 			openIndex($(this).index() + 1);
 		});
 
+		$('.content__nav--page-number').on('click', function(e){
+			openIndex($(this).index() + 1);
+		})
+
 	});
 })(jQuery);
