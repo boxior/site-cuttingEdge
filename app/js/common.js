@@ -90,6 +90,7 @@ $(document).ready(function(){
         $('.page1').removeClass('visible');
         $('.page2').addClass('visible');
     });
+    
     $('.content__nav a:nth-child(1)').click(function(){
         $('.page2').removeClass('visible');
         $('.page1').addClass('visible');
