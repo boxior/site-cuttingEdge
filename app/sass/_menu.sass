@@ -1,5 +1,5 @@
 .menu
-    padding: 3.5rem 11.7% 3.5rem 11.7%
+    padding: 0 11.7% 0 11.7%
     display: flex
     align-items: center
     justify-content: center
@@ -7,9 +7,13 @@
     background: #ef1f5a
 
     .content
+        height: 80vh
         padding: 0
         &__language
             margin: 0
+        
+        &__wrapper 
+            width: 100%
 
     &__phone 
         width: 100%
@@ -41,13 +45,13 @@
         flex-wrap: wrap
         > div
             a
-                line-height: 2.5
+                line-height: 2.48
                 text-transform: uppercase
                 &:hover
                     text-decoration: underline
                     text-decoration-color: silver 
                     color: #b8a269 
-            margin-top: 5rem
+            margin-top: 2rem
             &:first-child, &:nth-child(3),  &:nth-child(4), &:nth-child(6)
                 width: 20%
             &:nth-child(2), &:nth-child(5)
@@ -79,3 +83,7 @@
 
             &:nth-child(3), &:nth-child(6)
                 width: 15%
+
+    &__logo
+        img 
+            width: 100%
