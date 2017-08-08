@@ -1131,6 +1131,12 @@ a {
         -ms-flex-order: 5;
             order: 5; } }
 
+@media all and (orientation: landscape) and (max-width: 1200px) {
+  html {
+    font-size: .3vw; }
+  .content__window-shadow {
+    padding: 4rem 4rem 5rem 1rem; } }
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   /**/ }
@@ -1138,7 +1144,7 @@ a {
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   html {
-    font-size: .8vw; }
+    font-size: .6vw; }
   .advantages .content {
     width: 90%; }
     .advantages .content__info2 {
@@ -1155,6 +1161,10 @@ a {
       margin: 0 0 0 0; }
       .advantages .content__info2--block > div:first-child {
         padding: 5.5rem 0 5.5rem 0; }
+  .content__info p {
+    font-size: 3.49rem; }
+  .content__info h3 {
+    font-size: 5rem; }
   .content__language {
     height: 8rem;
     text-align: right;
@@ -1178,11 +1188,23 @@ a {
   .content__menu .fa {
     margin-right: 3rem; }
   .menu__content {
-    font-size: 3.18rem; } }
+    font-size: 3.8rem; } }
 
 @media all and (orientation: landscape) and (max-width: 768px) {
   html {
-    font-size: .35vw; } }
+    font-size: .3vw; }
+  .content__info p {
+    font-size: 4.3rem; }
+  .content__info h3 {
+    font-size: 6rem; }
+  .content__window .fa {
+    padding: 7rem; }
+  .content__window-shadow {
+    padding: 6rem 6rem 7rem 5rem; }
+  .menu__content {
+    font-size: 2.3rem; }
+  .menu__logo img {
+    width: 80%; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
