@@ -787,9 +787,6 @@ a {
       opacity: 0;
       padding: 7.5rem 0 7.5rem 0;
       background: rgba(255, 255, 255, 0.9);
-      -webkit-transition: all linear .5s;
-      -o-transition: all linear .5s;
-      transition: all linear .5s;
       color: #a28f5c; }
       .advantages .content__green-zone:hover {
         background: #6a0001;
@@ -804,10 +801,7 @@ a {
       text-align: -webkit-center;
       opacity: 0;
       padding: 7.5rem 0 7.5rem 0;
-      background: rgba(255, 255, 255, 0.9);
-      -webkit-transition: all linear .5s;
-      -o-transition: all linear .5s;
-      transition: all linear .5s; }
+      background: rgba(255, 255, 255, 0.9); }
       .advantages .content__parking:hover {
         background: #6a0001;
         cursor: pointer; }
@@ -821,10 +815,7 @@ a {
       opacity: 0;
       text-align: -webkit-center;
       padding: 7.5rem 0 7.5rem 0;
-      background: rgba(255, 255, 255, 0.9);
-      -webkit-transition: all linear .5s;
-      -o-transition: all linear .5s;
-      transition: all linear .5s; }
+      background: rgba(255, 255, 255, 0.9); }
       .advantages .content__infrastructure:hover {
         background: #6a0001;
         cursor: pointer; }
@@ -838,10 +829,7 @@ a {
       opacity: 0;
       text-align: -webkit-center;
       padding: 7.5rem 0 7.5rem 0;
-      background: rgba(255, 255, 255, 0.9);
-      -webkit-transition: all linear .5s;
-      -o-transition: all linear .5s;
-      transition: all linear .5s; }
+      background: rgba(255, 255, 255, 0.9); }
       .advantages .content__four:hover {
         background: #6a0001;
         cursor: pointer; }

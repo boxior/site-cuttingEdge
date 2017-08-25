@@ -58,7 +58,7 @@ gulp.task('js', ['common-js'], function() {
     'app/libs/tether/js/tether.min.js',
     'app/libs/bootstrap/js/bootstrap.min.js',
     'app/libs/slick/slick.min.js',
-
+  
     'app/libs/cubeTransition/wheel-indicator.js',
     'app/libs/cubeTransition/jquery.touchSwipe.js',
     'app/libs/cubeTransition/cubeTransition.js',

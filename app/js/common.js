@@ -1,23 +1,21 @@
 'use strict';
-
 $(document).ready(function(){
     $('.content__info').fadeIn(1000);
     $('.content__window').fadeIn(1000).animate({'top': '50%'});
-    $('.content__window-shadow').delay(2000).fadeIn().animate({'top':'57%','right':'-12%'});
+	$('.content__window-shadow').delay(2000).fadeIn().animate({'top':'57%','right':'-12%'});
     $('.content__window').hover(function(){
         $('.content__window .fa').css('color','#bfad7c');
     }, function(){
         $('.content__window .fa').css('color','#6a0001');
     });
 
-    $('.content__info2--block div:first-child').animate({'opacity':'1','top':'0'}, 1000 , function(){
-        $('.content__info2--block div:first-child').css({'top':'0','opacity':'1'});
-    });
+    // $('.content__info2--block div:first-child').animate({'opacity':'1','top':'0'}, 3000 );
+    // $('.content__info2--block div:first-child').css({'top':'0','opacity':'1'});
 
     $('.content__info2--block div:first-child').hover(function(){
-        $(this.nextElementSibling).animate({'opacity':'1','top':'2rem','right':'2rem'});
+        $(this).next().animate({'opacity':'1','top':'2rem','right':'2rem'});
     }, function(){
-        $(this.nextElementSibling).animate({'opacity':'0','top':'0','right':'0'});
+        $(this).next().animate({'opacity':'0','top':'0','right':'0'});
     });
 
     $('.advantages .content__info2').slick({
@@ -58,9 +56,13 @@ $(document).ready(function(){
     
 
 });
+        function animationOut(i){
+            
+        }
+        function animationIn(i){
+            
+        }
     
-    function animationOut(i){}
-    function animationIn(i){}
     
     
 
